@@ -74,7 +74,7 @@ export default {
       const regex = new RegExp('^[А-ЯA-Zа-яa-zЁё]+$')
       const key = String.fromCharCode(evt.charCode)
       if (!regex.test(key)) {
-        event.preventDefault()
+        evt.preventDefault()
         return false
       }
     }
